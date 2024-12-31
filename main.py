@@ -10,6 +10,7 @@ noun2 = get_input("noun")
 verb2 = get_input("verb")
 
 
+# This comment will be merged into main via pull request
 story = f"""
 Once upon a time, there was a {adjective1} {noun1} who loved to {verb1} all day.
 
