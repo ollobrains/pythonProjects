@@ -9,6 +9,7 @@ noun1 = get_input("noun")
 adjective1 = get_input("adjective")
 verb1 = get_input("verb")
 noun2 = get_input("noun")
+# fetching changes (diffs) from main and making new changes in dev to push changes into remote main branch for PR
 verb2 = get_input("verb")
 
 
