@@ -1,5 +1,5 @@
 def get_input(word_type: str):
-    user_input: str = input(f"Enter a {word_type}")
+    user_input: str = input(f"Enter a {word_type}: ")
     return user_input
 
 
@@ -11,8 +11,9 @@ verb2 = get_input("verb")
 
 
 story = f"""
-Once upon a time, there as a {adjective1} {noun1} who loved to {verb1} all day. One day, {noun2} walked into the room and caught the {noun1}
-in the act.
+Once upon a time, there was a {adjective1} {noun1} who loved to {verb1} all day.
+
+One day, {noun2} walked into the room and caught the {noun1} in the act.
 
 {noun2}: "What are you doing?"
 {noun1}: "I'm just {verb1}ing, what's the big deal?"
