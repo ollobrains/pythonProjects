@@ -2,6 +2,8 @@ def get_input(word_type: str):
     user_input: str = input(f"Enter a {word_type}: ")
     return user_input
 
+# This is a new comment being made in dev branch to make pull request
+
 
 noun1 = get_input("noun")
 adjective1 = get_input("adjective")
