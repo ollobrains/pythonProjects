@@ -6,7 +6,7 @@ def roll_dice(amount: int = 2) -> list[int]:
         raise ValueError
 
     rolls: list[int] = []
-    for i in range(amount):
+    for _ in range(amount):
         random_roll: int = random.randint(1, 6)
         rolls.append(random_roll)
 
