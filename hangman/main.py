@@ -28,19 +28,25 @@ def run_game():
             break
         guess: str = input('Enter a letter: ')
 
+        if len(guess) > 1:
+            for char in guess:
+                if char not in word:
+                    tries -= 1
+                    print(f'Incorrect letter: {char}... ({tries} tries remaining)')
+                    if tries == 0:
+                        print('You ran out of tries...')
+                        break
+        elif guess not in word:
+            tries -= 1
+            print(f'Sorry, that was wrong... ({tries} tries remaining)')
+            if tries == 0:
+                print('You ran out of tries...')
+
         if guess in guessed:
             print(f'You already used: "{guess}". Please try another letter')
             continue
 
         guessed += guess
-
-        if guess not in word:
-            tries -= 1
-            print(f'Sorry, that was wrong... ({tries} tries remaining)')
-
-            if tries == 0:
-                print('No more tries remaining...')
-                break
 
 
 if __name__ == '__main__':
