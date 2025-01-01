@@ -32,12 +32,15 @@ def run_game():
             for char in guess:
                 if char not in word:
                     tries -= 1
+                    print(f'Incorrect letter: {char}... ({tries} tries remaining)')
                     if tries == 0:
-                        print(f'You ran out of tries... ({tries} tries remaining)')
+                        print('You ran out of tries...')
                         break
         elif guess not in word:
             tries -= 1
             print(f'Sorry, that was wrong... ({tries} tries remaining)')
+            if tries == 0:
+                print('You ran out of tries...')
 
         if guess in guessed:
             print(f'You already used: "{guess}". Please try another letter')
